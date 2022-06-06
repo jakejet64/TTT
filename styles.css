@@ -1,0 +1,46 @@
+:root {
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.board {
+    display: grid;
+    gap: 2vmin;
+    width: 60vmin;
+    height: 60vmin;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+}
+
+.board-piece {
+    background-color: rgb(174, 174, 174);
+    border-radius: 2vmin;
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.613);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: rgb(43, 43, 43);
+    text-shadow: 1px 1px 6px rgba(110, 110, 110, 0.727);
+}
+
+.congrats {
+    position: fixed;
+    top:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 2vmin;
+    background-color: rgb(8, 142, 100);
+    color: white;
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.613);
+    text-shadow: 1px 1px 6px rgba(110, 110, 110, 0.727);
+}
